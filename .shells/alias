@@ -1,17 +1,18 @@
-# Cute shell shortcuts
-alias ls='ls --sort=extension --color=auto'
-alias ll='ls -lh'
-alias lal='ls -alh'
-alias la='ls -A'
-alias pms='sudo pm-suspend'
-alias psg='ps -A | grep'
-alias se='sudo gvim'
-alias e='gvim'
-alias smi='sudo make install'
-alias l='ls -CF'
+#Keyfile Directory
+alias cdk="cd ~/Dropbox/development/devops/keyfile/"
 
-# Cool colors for man pages
-alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
+#Github Directory
+alias cdg="cd ~/github/"
+
+#Update OS
+alias update="sudo apt-get update"
+
+# Clear terminal
+alias c="clear"
+
+# Cute shell shortcuts
+alias ll='ls -lah'
+alias l="ll"
 
 # Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -24,28 +25,31 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# This one is to take care of make
-# Give me a nice, distinguishable make output
-alias make='clear && make'
-alias m='make'
-
 # Some more, to avoid mistakes
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+alias rm='rimraf'
 
 # Git Commands
-# Add and Commit are used as functions
-alias gpo='git push origin master'
-alias gp='git pull'
-alias gs='git status'
+alias gpom='git push origin master'
+alias commit="git commit"
+alias add="git add"
+alias push="git push"
+alias pull='git pull'
+alias gst='git status'
 alias gd='git diff'
 alias gr='git reflog'
 alias glf='git ls-files'
 
-# Useful for C/C++ work
-# R for recursive, p10 to show file paths
-alias scope='cscope -CR -p10'
+# Quickly load bashrc$
+alias gg='source ~/.bashrc'
 
-# Quickly load bashrc
-alias gogo='source ~/.bashrc'
+# Autoremove and Autoclean unused packages from the system
+alias clean="sudo apt-get autoremove && sudo apt-get autoclean"
+
+# Tail files
+alias tf="tail -f"
+
+#List open ports and services using the ports
+alias op="sudo lsof -iTCP -sTCP:LISTEN -P"
+
+#Netstat
+alias netstat="netstat -plntu"
