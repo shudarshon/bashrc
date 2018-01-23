@@ -1,11 +1,20 @@
 #Keyfile Directory
-alias cdk="cd ~/Dropbox/development/devops/keyfile/"
+alias cdk="cd ~/devops/keyfile/"
 
 #Github Directory
 alias cdg="cd ~/github/"
 
+#Dropbox Directory
+alias cdd="cd ~/Dropbox"
+
+#Bashrc Config Directory
+alias cds="cd ~/.shells"
+
 #Update OS
 alias update="sudo apt-get update"
+
+#Shutdown OS
+alias qq="sudo shutdown -h now"
 
 # Clear terminal
 alias c="clear"
@@ -25,18 +34,18 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# Some more, to avoid mistakes
+# Remove regardless of regular or directory file
 alias rm='rimraf'
 
 # Git Commands
 alias gpom='git push origin master'
-alias commit="git commit"
-alias add="git add"
-alias push="git push"
-alias pull='git pull'
+alias gcom="git commit"
+alias gad="git add"
+alias gps="git push"
+alias gpl='git pull'
 alias gst='git status'
-alias gd='git diff'
-alias gr='git reflog'
+alias gdf='git diff'
+alias grf='git reflog'
 alias glf='git ls-files'
 
 # Quickly load bashrc$
