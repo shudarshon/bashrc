@@ -1,5 +1,5 @@
 #Bitbucket Directory
-alias cbb="cd ~/bitbucket"
+alias cdb="cd ~/bitbucket"
 
 #Keyfile Directory
 alias cdk="cd ~/devops/keyfile/"
@@ -15,6 +15,9 @@ alias cds="cd ~/.shells"
 
 #Update OS
 alias update="sudo apt-get update"
+
+#exit terminal
+alias q='exit'
 
 #Shutdown OS
 alias qq="sudo shutdown -h now"
@@ -38,7 +41,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Remove regardless of regular or directory file
-alias rm='rimraf'
+alias rm='rimraf'   #node-rimraf needs to be installed
 
 # Git Commands
 alias gpom='git push origin master'
@@ -55,7 +58,7 @@ alias glf='git ls-files'
 alias gg='source ~/.bashrc'
 
 # Autoremove and Autoclean unused packages from the system
-alias clean="sudo apt-get autoremove && sudo apt-get autoclean"
+alias arc="sudo apt-get autoremove && sudo apt-get autoclean"
 
 # Tail files
 alias tf="tail -f"
@@ -65,3 +68,16 @@ alias op="sudo lsof -iTCP -sTCP:LISTEN -P"
 
 #Netstat
 alias netstat="netstat -plntu"
+
+#copy and paste
+alias pbcopy='xclip -selection clipboard'   #needs xclip to be installed
+alias pbpaste='xclip -selection clipboard -o'
+
+#apt install
+alias i='sudo apt-get install'
+
+#file size summary
+alias s='du -hs'
+
+#back to previous directory
+alias ..='cd ..'
