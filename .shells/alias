@@ -44,7 +44,7 @@ fi
 alias rm='rimraf'   #node-rimraf needs to be installed
 
 # Git Commands
-alias gpom='git push origin master'
+alias gpom='git push -u origin master'
 alias gcom="git commit"
 alias gad="git add"
 alias gps="git push"
