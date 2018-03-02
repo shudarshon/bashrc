@@ -1,3 +1,7 @@
+#Make Python3 Default
+alias python=python3
+alias pip=pip3
+
 #Bitbucket Directory
 alias cdb="cd ~/bitbucket"
 
