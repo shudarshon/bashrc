@@ -1,6 +1,6 @@
 #Make Python3 Default
-alias python=python3
-alias pip=pip3
+alias python=python2.7
+alias pip=pip2
 
 #Bitbucket Directory
 alias cdb="cd ~/bitbucket"
@@ -74,8 +74,8 @@ alias op="sudo lsof -iTCP -sTCP:LISTEN -P"
 alias netstat="netstat -plntu"
 
 #copy and paste
-alias pbcopy='xclip -selection clipboard'   #needs xclip to be installed
-alias pbpaste='xclip -selection clipboard -o'
+alias pbc='xclip -selection clipboard'   #needs xclip to be installed
+alias pbp='xclip -selection clipboard -o'
 
 #apt install
 alias i='sudo apt-get install'
