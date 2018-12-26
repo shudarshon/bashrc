@@ -11,6 +11,7 @@ export NICKNAME="chaks"
 # Distribute bashrc into smaller, more specific files
 
 source ~/.shells/defaults
+source ~/.shells/git
 source ~/.shells/functions
 source ~/.shells/alias
 source ~/.shells/prompt   # Fancy prompt with time and current working dir
@@ -23,5 +24,5 @@ echo "Hardware Information:"
 sensors  # Needs: 'sudo apt-get install lm-sensors'
 uptime   # Needs: 'sudo apt-get install lsscsi'
 lsscsi
-free -mh
+free -h
 df -h
